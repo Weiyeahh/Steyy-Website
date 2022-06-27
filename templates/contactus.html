@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Bellota:wght@300&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <style>
-        body{position: relative;top:50px}
+        body{position: relative;top:50px;font-family: ;}
         table{width: 100%;}
         th, tr, td{position: relative;text-align: center;width:fit-content;}
         td{width: 100%;text-align: center;padding: 5px;}
         th{text-align: center;font-size: 22pt;padding: 20px;}
         a{font-weight: 600;font-size: 11pt;}
         a:link{color: rgb(180, 157, 72);}
+        #form1{font-size: 10pt; }
     </style>
 
 </head>
@@ -44,5 +48,38 @@
             <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.5505535313628!2d-71.06435509999999!3d42.35210480000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a77b45bb11b%3A0xd4a8dbb5e09f3586!2s62%20On%20The%20Park%2C%20Boston%2C%20MA%2002116!5e0!3m2!1sen!2sus!4v1656297347775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
             </tr>
         </table>
+
+        <div id="form1">
+        <h1> Customer Feedback</h1>
+        <form method="post" action="https://oim-apis.herokuapp.com/form">
+            <fieldset>
+                <legend>Your Information:</legend>
+                <label for="name">Name:</label>
+                <input name="name" id="name" type="text" placeholder="Enter your name here">
+                <hr>
+                <label for="email">Email:</label>
+                <input name="email" id="email" type="email" placeholder="Enter your email here">
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Your Review:</legend>
+                <label for="product">How do you like our page?</label><hr>
+                <input list="product" name="product" id="products">
+                <datalist id="product">
+                    <option>Very Much</option>
+                    <option> A lot!</option>
+                    <option>It's okay</option>
+                </datalist>
+                <hr>
+                
+                <label for="comment">Comments:</label><br>
+                <textarea name="comment" id="comment"></textarea>
+                <hr>
+                
+                
+                <button type="submit"  name="submit">Submit</button>
+                <button type="reset" name="reset" id="reset">Reset</button>
+        </form>
+        </div>
 </body>
 </html>

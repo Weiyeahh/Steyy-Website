@@ -2,3 +2,8 @@
 
 
 
+
+Human: hi
+ AI: Hello, how are you doing today?
+Human: hi
+ AI: Hello, how are you today?
