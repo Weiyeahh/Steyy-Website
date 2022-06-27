@@ -1,10 +1,10 @@
 import os
 import openai
-
+from appkey import appkey
 
 def botres(prompttext,usertext,responselist):
 
-  openai.api_key = "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"
+  openai.api_key = appkey
   start_sequence = "\nAI: "
   restart_sequence = "\nHuman: "
   responselist+=f'\nHuman: {usertext}\n AI: '
