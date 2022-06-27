@@ -3,7 +3,5 @@
 
 
 
-Human: hi
- AI: Hello, how are you doing today?
-Human: hi
- AI: Hello, how are you today?
+Human: woof
+ AI: I'm sorry, I didn't understand what you said.
