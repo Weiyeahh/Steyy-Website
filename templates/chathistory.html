@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Bellota:wght@300&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="/Style/style.css">
+       <style>
+            a:hover{text-decoration:none;}
+            button:hover{background-color: antiquewhite;}
+            #submit:hover{background-color: antiquewhite;}
+            a:link{text-decoration: none;}
+            a:visited{color:rgb(84, 64, 64);text-decoration: none;}
+            #toform:hover{color: none;text-decoration: none;}
+            #toform:visited{color: none;text-decoration: none;}
+
+            h1 {font-family: "Cormorant Garamond",cursive; color:rgb(53, 52, 52);text-align: center;font-weight: 600;}
+
+            p {font-family: "Cormorant Garamond",cursive;font-weight:400;color:rgb(53, 52, 52) ;text-align: center;margin-left: 5cm;margin-right: 5cm;font-size: 15pt;}
+
+            body{font-family:"Cormant Garamond",cursive; text-align: center; background-color: #ffffff;background-image:url(static/goldglitter.png);background-repeat:repeat;
+  background-size: 500px;position: relative;top:50px}
+            #entry{width: 200px;display:block;margin-left: auto;margin-right: auto;}
+            button{font-family: "Arima Madura",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color: rgb(235, 216, 231);border: none;border-radius: 8px;padding: 16px;}
+            #submit{font-family: "Arima Madura",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color: rgb(235, 216, 231);border: none;border-radius: 8px;padding: 16px;}
+           hr{border: none;}
+           @keyframes example {
+            0%   {opacity:0%;}
+            10%  {opacity: 10%;}
+            25%  {opacity: 25%;}
+            40% {opacity: 40%;}
+            55%   {opacity:55%;}
+            70%  {opacity: 70%;}
+            85%  {opacity: 85%;}
+            100% {opacity: 100%;}
+            }
+            p{animation-name: example;
+                ;
+            animation-duration: 0.8s;}
+           </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload</title>
+    </head>
+
+    <body>
+        <nav> <a class="nav" href="https://steyy.com">Home</a>
+            <a class="nav right" id="tryit" href="/">Try-it</a>
+            <a class="nav right" href="/contact">Contact</a>
+            <a class="nav right" href="/usercase">Usecase</a>
+            <a class="nav right" href="/sitemap">Sitemap</a>
+        
+            <a class="nav login">Login</a>
+            
+        </nav>
+        <h1> You can choose to upload a chat history with that person to better train our AI.</h1>
+        <img id="entry" src="../static/chathistory.png">
+        <p>Add chat history here. (txt file, currently support whatsapp chat-history file)</p>
+        <button><a href="{{url_for('upload_file')}}">Upload</a> </button> <br>
+    
+        <p> Or Continue and create a new replica.</p>
+        <button><a href="{{ url_for('upload_userprofile') }}">Continue Without</a> </button><br>
+    </body>
+</html>

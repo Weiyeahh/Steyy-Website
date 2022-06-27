@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <style>
+        body{font-family:"Cormant Garamond",cursive; text-align: center; background-color: #ffffff;background-image:url(../static/goldglitter.png);background-repeat:repeat;
+  background-size: 500px;}
+        .jumbotron{font-family:"Cormant Garamond",cursive; text-align: center; background-color: #ffffff;background-image:url(../static/goldglitter.png);background-repeat:repeat;
+  background-size: 500px;}
+
+        #chatbox{border: rgb(148, 131, 32) 2px dashed;margin-left: auto;margin-right: auto;text-align: left;position: relative;width: 600px;padding: 10px;}
+        #botprofile,#userprofile,#botprofile2{
+        width: 50px; /* width of container */
+        height: 50px; /* height of container */
+        border-radius: 10%;
+        object-fit: cover;
+        border: none;
+        float: left;
+        left:0
+        }
+       #textInput{width:600px;display: block;margin-left: auto;margin-right: auto;}
+       hr{width: 0;}
+       #buttonInput{font-family: "Arima Madura",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color:#f5c7a5;border: none;border-radius: 8px;padding: 16px;}
+       .botText{display: block;text-align: left;}
+  
+        body{position: relative;top:50px}
+        .nav{position: relative;width: 80px;display: flex;;align-items: center;justify-content: center;height: 40px;font-family: "Cormorant Garamond",cursive;font-weight:700;color:rgb(53, 52, 52) ;text-align: center;font-size: 14pt;margin: 0;padding: 0;border-radius: 5%;}
+    nav{justify-content: left;display:flex;height:40px;background-color: #ffdcc3;border-radius: 3%;text-align: center;align-items: center;opacity: 80%;margin:0;padding: 0;top:0;position:absolute;right: 0;left: 0;position: fixed;z-index: 100;box-shadow: #ffdcc3;}
+    .right{position: relative;}
+    .login{display: flex;position: absolute;right: 0;}
+    nav a:hover{background-color: #ffffff;opacity: 80%;}
+    nav a:link{text-decoration: none;}
+    nav{overflow: hidden;}
+    #tryit{overflow: hidden;float: left;}
+    #tryit .dropdown:hover{display: block;}
+    .dropdown{display: none;position: absolute;z-index: 1001;width: 100px;}
+    .dropdown:a{float:none;display: block;text-align: left;color: black;}
+    </style>
+</head>
+<body>
+    <nav> <a class="nav" href="https://steyy.com">Home</a>
+        <a class="nav right" id="tryit" href="/">Try-it</a>
+        <a class="nav right" href="/contact">Contact</a>
+        <a class="nav right" href="/usercase">Usecase</a>
+        <a class="nav right" href="/sitemap">Sitemap</a>
+    
+        <a class="nav login">Login</a>
+        
+    </nav>
+    <h1 class="jumbotron text-center"> Welcome to Steyy </h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <div id="chatbox" >
+                <img id="botprofile" src="/static/botprofile.jpg"><p class="botText" id="botText"> <span > Hi! </span></p><hr>
+            </div>
+            <div id="userInput">
+                <hr>
+                <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here">
+                <input id="buttonInput" class="btn btn-success form-control" type="submit" value="Send">
+            </div>
+        </div>
+    </div>
+
+<script>
+    function getResponse() {
+        let userText = $("#textInput").val();
+        let userHtml = '<img id="userprofile" src="/static/userprofile.jpg"><p class="userText"><span> ' +  userText + ' </span></p><hr>';
+        $("#textInput").val("");
+        $("#chatbox").append(userHtml);
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+        $.get("/get", { msg: userText }).done(function(data) {
+        var botHtml = '<img id="botprofile2" src="/static/botprofile.jpg"><p class="botText"><span> ' + data + ' </span></p><hr>';
+        $("#chatbox").append(botHtml);
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+    $("#textInput").keypress(function(e) {
+    //if enter key is pressed
+        if(e.which == 13) {
+            getResponse();
+        }
+    });
+    $("#buttonInput").click(function() {
+        getResponse();
+    });
+
+   
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>

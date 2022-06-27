@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Bellota:wght@300&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <style>
+        div{width:600px;height: 600px;display: flex;justify-content: center;align-items: center;flex-direction: column;margin-left: auto;margin-right: auto;text-align: center;position: relative;}
+        #seconddiv{margin-top: -600px;padding-bottom: 100px;}
+        .container{width: 100%;height: fit-content;justify-content: center;align-items: center;}
+        input{color: grey;width: 200px;}
+            a:hover{text-decoration:none;color:rgb(48, 45, 45) ;}
+            button:hover{background-color: antiquewhite;}
+            #submit{font-family: "Arima Madura",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color:#f5c7a5;border: none;border-radius: 8px;padding: 16px;}
+            #submit:hover{text-decoration:none;color:rgb(48, 45, 45) ;background-color: antiquewhite;}
+            a:link{text-decoration: none;color: rgb(48, 45, 45);text-align: center;}
+            a:visited{color:rgb(84, 64, 64);text-decoration: none;}
+            #toform:hover{color: none;text-decoration: none;}
+            #toform:visited{color: none;text-decoration: none;}
+            label{font-family: "Cormorant Garamond",cursive;font-weight:600;color:rgb(53, 52, 52) ;text-align: center;font-size: 18pt;}
+
+            h1 {font-family: "Cormorant Garamond",cursive; color:rgb(53, 52, 52);text-align: center;font-weight: 600;margin-top: 10px;margin-bottom: 10px;}
+
+            p {font-family: "Cormorant Garamond",cursive;font-weight:400;color:rgb(53, 52, 52) ;text-align: center;font-size: 18pt;}
+
+            body{font-family:"Cormant Garamond",cursive; text-align: center; background-color: #ffffff;background-image:url(../static/goldglitter.png);background-repeat:repeat;
+  background-size: 500px;}
+            #entry{width: 200px;display:block;margin-left: auto;margin-right: auto;}
+            button{font-family: "Arima Madura",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color:#f5c7a5;border: none;border-radius: 8px;padding: 16px;}
+           hr{border: none;}
+           @keyframes example {
+            0%   {opacity:0%;}
+            10%  {opacity: 10%;}
+            25%  {opacity: 25%;}
+            40% {opacity: 40%;}
+            55%   {opacity:55%;}
+            70%  {opacity: 70%;}
+            85%  {opacity: 85%;}
+            100% {opacity: 100%;}
+            }
+
+            /* The element to apply the animation to */
+            #intro {
+            animation-name: example;
+            animation-duration: 1.2s;}
+            p{animation-name: example;
+                ;
+            animation-duration: 0.8s;}
+            #steyy{width:230px; height:130px; object-fit: cover;}
+            #butterfly{position: absolute; z-index: 1;width: 220px;margin-top: -220px;opacity: 0.8;}
+            .gif{width: 150px;}
+            #Tryit{z-index: 2;}
+            #welcome{position: absolute;width:300px;top: 0;}
+            #firstp{margin-top: 0px;}
+            select{width: 100px; font-family: cursive;font-size: 15px;}
+            #cnn{height: 40px;width: 40px;padding-top: 0px;}
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav{position: relative;width: 80px;display: flex;;align-items: center;justify-content: center;height: 40px;font-family: "Cormorant Garamond",cursive;font-weight:700;color:rgb(53, 52, 52) ;text-align: center;font-size: 14pt;margin: 0;padding: 0;border-radius: 5%;}
+    nav{justify-content: left;display:flex;height:40px;background-color: #ffdcc3;border-radius: 3%;text-align: center;align-items: center;opacity: 80%;margin:0;padding: 0;top:0;position:absolute;right: 0;left: 0;position: fixed;z-index: 100;box-shadow: #ffdcc3;}
+    .right{position: relative;}
+    .login{display: flex;position: absolute;right: 0;}
+    nav a:hover{background-color: #ffffff;opacity: 80%;}
+    nav{overflow: hidden;}
+    #tryit{overflow: hidden;float: left;}
+    #tryit .dropdown:hover{display: block;}
+    .dropdown{display: none;position: absolute;z-index: 1001;width: 100px;}
+    .dropdown:a{float:none;display: block;text-align: left;color: black;}
+    </style>
+</head>
+<body>
+   
+    <nav> <a class="nav" href="https://steyy.com">Home</a>
+        <a class="nav right" id="tryit" href="/">Try-it</a>
+        <a class="nav right" href="/contact">Contact</a>
+        <a class="nav right" href="/usercase">Usecase</a>
+        <a class="nav right" href="/sitemap">Sitemap</a>
+    
+        <a class="nav login">Login</a>
+        
+    </nav>
+    <div id="firstdiv"></div>
+    <div id="seconddiv">
+    <img src="/static/steyy.png" id="steyy">
+    <h1>Welcome to Steyy</h1>
+    <p id="firstp">Steyy is a place where you can bring your loved ones back. </p>
+    <button id="Tryit"><a href="#q1">Try Now</a></button>
+    </div>
+    <form method="Post">
+        <div class="container">
+
+            <div id="q1">
+            <img class="gif" src="/static/name.gif">
+            <img src="/static/ribbon.gif" id="welcome">
+            <h1>Welcome!</h1>
+            <label for="username">How do you prefer us to call you?</label>
+            <hr>
+            <input id="username" type="text" name="username"placeholder="John">
+            <hr>
+            <button type="button"><a href="#q2">Next</a> </button>
+            </div>
+
+            <div id="q2">
+            <img class="gif" src="/static/man.gif">
+            <label for="chatbotname">Who do you wish to recreate?(name only)</label>
+            <hr>
+            <input id="chatbotname" type="text" name="chatbotname" placeholder="ex:Annabelle" >
+            <hr>
+            <button  type="button"><a href="#q3">Next</a> </button>
+            </div>
+
+            <div id="q3">
+            <img class="gif" src="/static/maninphone.gif">
+            <label for="gender">What's his/her gender?</label>
+            <hr>
+            <select id="gender" name="gender">
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Trans">Trans</option>
+              <option value="Others">Others</option>
+            </select>
+            <hr>
+            <button  type="button"><a href="#q4">Next</a> </button>
+            </div>
+
+            <div id="q4">
+                <img class="gif" src="/static/grandma.gif">
+            <label for="relationship">What's the relationship between you and the person being created? (One word)</label>
+            <hr>
+            <input id="relationship" type="text" name="relationship" placeholder="ex: Grandmother">
+            <hr>
+            <button  type="button"><a href="#q5">Next</a> </button>
+            </div>
+
+            <div id="q5">
+                <img class="gif" src="/static/grandmatyping.gif">
+            <label for="age">How old is he/she?</label>
+            <hr>
+            <input id="age" type="number" name="age">
+            <hr>
+            <button  type="button"><a href="#q6">Next</a> </button>
+            </div>
+
+            <div id="q6">
+            <img class="gif" src="/static/call.gif">
+            <label for="nickname">How does that person call you?</label>
+            <hr>
+            <input id="nickname" type="text" name="relationship" placeholder="ex: Grandmother">
+            <hr>
+            <button  type="button"><a href="#q7">Next</a> </button>
+            </div>
+
+            <div id="q7">
+                <img class="gif" src="/static/call.gif">
+                <label for="personality">Describe his/her personality with three words.</label>
+                <hr>
+                <input id="p1" type="text" name="p1" placeholder="ex: sarcastic"><br>
+                <input id="p2" type="text" name="p2" placeholder="ex: relaxed"><br>
+                <input id="p3" type="text" name="p3" placeholder="ex: caring"><br>
+                <hr>
+                <button  type="button"><a href="#submit">Next</a> </button>
+                </div>
+
+            <div>
+           
+            <h1>You are all set. Let's go!</h1>
+            <hr>
+            <input id="submit" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    <script>
+        let imgEL='<img src="/static/Tryit.gif" id="butterfly">';
+        let div1=document.querySelector("#firstdiv");
+        function showpic(){
+            div1.innerHTML=(imgEL);}
+        function removepic(){
+            console.log("starting")
+           document.getElementById("butterfly").style.visibility="hidden";}
+        
+      
+                
+        document.getElementById("Tryit").addEventListener("mouseover",function(){showpic()});
+        document.getElementById("Tryit").addEventListener("mouseout",function(){removepic()});
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+     function changeImage()
+            {
+            const img = document.getElementById("welcome");
+            img.style.visibility="hidden"}
+    document.getElementById("q1").addEventListener("mousemove",function(){changeImage()});
+
+   
+    
+    </script>
+</body>
+</html>

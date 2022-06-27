@@ -1,0 +1,100 @@
+2022-04-29T22:37:35.155048+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/werkzeug/serving.py", line 991, in run_simple
+2022-04-29T22:37:35.155048+00:00 app[web.1]: s.bind(server_address)
+2022-04-29T22:37:35.155048+00:00 app[web.1]: OSError: [Errno 98] Address already in use
+2022-04-29T22:37:35.155170+00:00 app[web.1]: [2022-04-29 22:37:35 +0000] [9] [INFO] Worker exiting (pid: 9)
+2022-04-29T22:37:35.224519+00:00 app[web.1]: [2022-04-29 22:37:35 +0000] [10] [INFO] Worker exiting (pid: 10)
+2022-04-29T22:37:35.269776+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=c4d602b8-ab10-40a4-a64c-0a89bf3441dc fwd="76.24.30.174" dyno=web.1 connect=5000ms service=882ms status=503 bytes=0 protocol=https
+2022-04-29T22:37:35.323770+00:00 app[web.1]: [2022-04-29 22:37:35 +0000] [4] [INFO] Shutting down: Master
+2022-04-29T22:37:35.323775+00:00 app[web.1]: [2022-04-29 22:37:35 +0000] [4] [INFO] Reason: Worker failed to boot.
+2022-04-29T22:37:35.535454+00:00 heroku[web.1]: Process exited with status 3
+2022-04-29T22:37:35.583444+00:00 heroku[web.1]: State changed from up to crashed
+2022-04-29T22:37:39.000000+00:00 app[api]: Build succeeded
+2022-04-29T22:37:43.767325+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=944e2cdb-f575-4898-bab9-e5099665cd74 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:43.851219+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=b4c77736-074f-4386-94bf-9d4b67c3c27a fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:51.705380+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=4c598770-0565-4686-bf74-dfb058b6a7c1 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:51.777334+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=f7ba4914-184f-4dda-a6ba-ad2294405772 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.338215+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=4fa89c10-d345-40b2-bd29-f3a96e36c72a fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.474939+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=f4ccd4a3-b053-4f01-abe3-357badfd8a60 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.615678+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=9ee32f9f-e1ce-4c4d-a7c9-62bc21e09921 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.701311+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=5e9c1d63-b4f6-461b-ac66-d1eb41332be1 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.860331+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=522fde15-c277-4653-a3fe-fee82ee7750f fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:52.933067+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=5bc68023-075e-4bb4-b48e-5ed56318a989 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:53.108260+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=df875cab-97b0-4ef9-9469-c83a2eaf3bfa fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:37:53.192904+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=e6a4cad2-7cf0-49a8-b508-31c8cb25a897 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:42:47.000000+00:00 app[api]: Build started by user wzhang5@babson.edu
+2022-04-29T22:43:47.360580+00:00 app[api]: Release v10 created by user wzhang5@babson.edu
+2022-04-29T22:43:47.360580+00:00 app[api]: Deploy dfbe6d6f by user wzhang5@babson.edu
+2022-04-29T22:43:48.473724+00:00 heroku[web.1]: State changed from crashed to starting
+2022-04-29T22:43:59.756203+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2022-04-29T22:44:01.492092+00:00 app[web.1]: [2022-04-29 22:44:01 +0000] [4] [INFO] Starting gunicorn 20.1.0
+2022-04-29T22:44:01.492474+00:00 app[web.1]: [2022-04-29 22:44:01 +0000] [4] [INFO] Listening at: http://0.0.0.0:44248 (4)
+2022-04-29T22:44:01.492541+00:00 app[web.1]: [2022-04-29 22:44:01 +0000] [4] [INFO] Using worker: sync
+2022-04-29T22:44:01.496226+00:00 app[web.1]: [2022-04-29 22:44:01 +0000] [9] [INFO] Booting worker with pid: 9
+2022-04-29T22:44:01.563036+00:00 app[web.1]: [2022-04-29 22:44:01 +0000] [10] [INFO] Booting worker with pid: 10
+2022-04-29T22:44:01.575632+00:00 heroku[web.1]: State changed from starting to up
+2022-04-29T22:44:03.554394+00:00 app[web.1]: * Serving Flask app 'app' (lazy loading)
+2022-04-29T22:44:03.554434+00:00 app[web.1]: * Environment: production
+2022-04-29T22:44:03.554441+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2022-04-29T22:44:03.554442+00:00 app[web.1]: Use a production WSGI server instead.
+2022-04-29T22:44:03.554444+00:00 app[web.1]: * Debug mode: off
+2022-04-29T22:44:03.554496+00:00 app[web.1]: * Serving Flask app 'app' (lazy loading)
+2022-04-29T22:44:03.554523+00:00 app[web.1]: * Environment: production
+2022-04-29T22:44:03.554562+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2022-04-29T22:44:03.554588+00:00 app[web.1]: Use a production WSGI server instead.
+2022-04-29T22:44:03.554608+00:00 app[web.1]: * Debug mode: off
+2022-04-29T22:44:03.556730+00:00 app[web.1]: [2022-04-29 22:44:03 +0000] [10] [ERROR] Exception in worker process
+2022-04-29T22:44:03.556732+00:00 app[web.1]: Traceback (most recent call last):
+2022-04-29T22:44:03.556733+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+2022-04-29T22:44:03.556734+00:00 app[web.1]: worker.init_process()
+2022-04-29T22:44:03.556734+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2022-04-29T22:44:03.556735+00:00 app[web.1]: self.load_wsgi()
+2022-04-29T22:44:03.556735+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2022-04-29T22:44:03.556736+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2022-04-29T22:44:03.556736+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2022-04-29T22:44:03.556736+00:00 app[web.1]: self.callable = self.load()
+2022-04-29T22:44:03.556736+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2022-04-29T22:44:03.556737+00:00 app[web.1]: return self.load_wsgiapp()
+2022-04-29T22:44:03.556737+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2022-04-29T22:44:03.556738+00:00 app[web.1]: return util.import_app(self.app_uri)
+2022-04-29T22:44:03.556738+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+2022-04-29T22:44:03.556738+00:00 app[web.1]: mod = importlib.import_module(module)
+2022-04-29T22:44:03.556739+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2022-04-29T22:44:03.556740+00:00 app[web.1]: return _bootstrap._gcd_import(name[level:], package, level)
+2022-04-29T22:44:03.556740+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2022-04-29T22:44:03.556741+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2022-04-29T22:44:03.556741+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2022-04-29T22:44:03.556741+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2022-04-29T22:44:03.556742+00:00 app[web.1]: File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2022-04-29T22:44:03.556742+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2022-04-29T22:44:03.556742+00:00 app[web.1]: File "/app/app.py", line 122, in <module>
+2022-04-29T22:44:03.556744+00:00 app[web.1]: app.run()
+2022-04-29T22:44:03.556744+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/flask/app.py", line 920, in run
+2022-04-29T22:44:03.556744+00:00 app[web.1]: run_simple(t.cast(str, host), port, self, **options)
+2022-04-29T22:44:03.556745+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/werkzeug/serving.py", line 1017, in run_simple
+2022-04-29T22:44:03.556745+00:00 app[web.1]: inner()
+2022-04-29T22:44:03.556746+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/werkzeug/serving.py", line 957, in inner
+2022-04-29T22:44:03.556746+00:00 app[web.1]: srv = make_server(
+2022-04-29T22:44:03.556746+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/werkzeug/serving.py", line 789, in make_server
+2022-04-29T22:44:03.556747+00:00 app[web.1]: return ThreadedWSGIServer(
+2022-04-29T22:44:03.556747+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/werkzeug/serving.py", line 693, in __init__
+2022-04-29T22:44:03.556747+00:00 app[web.1]: super().__init__(server_address, handler)  # type: ignore
+2022-04-29T22:44:03.556748+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/socketserver.py", line 452, in __init__
+2022-04-29T22:44:03.556748+00:00 app[web.1]: self.server_bind()
+2022-04-29T22:44:03.556748+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/http/server.py", line 138, in server_bind
+2022-04-29T22:44:03.556749+00:00 app[web.1]: socketserver.TCPServer.server_bind(self)
+2022-04-29T22:44:03.556749+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/socketserver.py", line 466, in server_bind
+2022-04-29T22:44:03.556750+00:00 app[web.1]: self.socket.bind(self.server_address)
+2022-04-29T22:44:03.556750+00:00 app[web.1]: OSError: [Errno 98] Address already in use
+2022-04-29T22:44:03.556909+00:00 app[web.1]: [2022-04-29 22:44:03 +0000] [10] [INFO] Worker exiting (pid: 10)
+2022-04-29T22:44:03.563750+00:00 app[web.1]: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-04-29T22:44:21.000000+00:00 app[api]: Build succeeded
+2022-04-29T22:44:33.715201+00:00 app[web.1]: [2022-04-29 22:44:33 +0000] [4] [INFO] Shutting down: Master
+2022-04-29T22:44:33.715239+00:00 app[web.1]: [2022-04-29 22:44:33 +0000] [4] [INFO] Reason: Worker failed to boot.
+2022-04-29T22:44:33.892203+00:00 heroku[web.1]: Process exited with status 3
+2022-04-29T22:44:33.947766+00:00 heroku[web.1]: State changed from up to crashed
+2022-04-29T22:45:22.273448+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=39231c25-2373-457b-a62a-c5afcef60db4 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:45:22.393408+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=635dcff5-ea63-4335-b8f5-605e4336aaf6 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:45:23.198339+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=321c15e5-a0da-4cc6-a878-85d6aab4e54f fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:45:23.299196+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=3b829691-f41e-4f85-92be-6e37459af8fa fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:45:34.674775+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=talkingcane.herokuapp.com request_id=84fe23b4-3412-43a4-b43b-016b2f0434ea fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
+2022-04-29T22:45:34.773480+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=talkingcane.herokuapp.com request_id=f9952469-78e6-45e8-b43d-6173c419ebb3 fwd="76.24.30.174" dyno= connect= service= status=503 bytes= protocol=https
