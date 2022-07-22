@@ -3,7 +3,7 @@ import openai
 
 def botres(prompttext,usertext,responselist):
 
-  openai.api_key ="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"
+ 
   start_sequence = "\nAI: "
   restart_sequence = "\nHuman: "
   responselist+=f'\nHuman: {usertext}\n AI: '

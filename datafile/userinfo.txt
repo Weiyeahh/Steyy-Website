@@ -1,7 +1,5 @@
-
-
-
-
-
-Human: hi
- AI: Hello there, how are you doing today?
+weiye
+sarcastic
+dramatic
+funny
+friend

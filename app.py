@@ -168,5 +168,10 @@ def my_contact():
 def my_sitemap():
     
     return render_template('sitemap.html')
+
+@app.route('/home')
+def my_home():
+    
+    return render_template('home.html')
 if __name__=="__main__":
     app.run()
