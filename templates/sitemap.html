@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Bellota:wght@300&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
     <style>
-        body{position:relative;justify-content:center;align-items:baseline;top:50px}
-        #func{position: absolute;width:400px;height: 300px;border: 1px black solid;padding: 20px;}
-        #info{position: absolute;width:400px;height: 300px;border: 1px black solid;left:600px;padding: 20px;}
-        #fp{position: absolute; top:20px;width:400px;z-index: 1;}
-        #ip{position: absolute; top:20px;width:400px;z-index: 1;left:600px}
-        div{background-color: rgb(254, 242, 228); opacity: 80%;border-radius: 5%;}
+        body{position:relative;display: flex;}
+        #func{position: relative;width:30vw;height: 300px;border: 1px black solid;top:10vh;left: auto;right:auto;}
+        div{background-color: rgb(254, 242, 228); opacity: 80%;border-radius: 5%;width: 40vw;}
+        nav{width:100vw;}
+        @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
+     
     </style>
 </head>
 <body>
@@ -29,18 +31,17 @@
         <a class="nav login">Login</a>
         
     </nav>
-    <h1 id="fp">Functional Pages:</h1>
+    
     <div id="func">
+    <label>Pages:</label>
+    <hr>
     <a href="https://steyy.com">Home</a>
     <a href="my-form.html">Tryit-form page</a>
     <a href="chathistory.html">Upload-Chathistory</a>
     <a href="userprofileupload.html">Upload-Userprofile</a>
     <a href="botprofile.html">Upload-botpicture</a>
     <a href="index.html">Chatbot page</a>
-    </div>
-    <h1 id="ip">Informatin Page</h1>
-    <div id="info">
-    <a href="contactus.html">Contac us</a>
+    <a href="contactus.html">Contact us</a>
     <a href="usercase.html">Usercase</a>
     </div>
 

@@ -37,6 +37,10 @@
             p{animation-name: example;
                 ;
             animation-duration: 0.8s;}
+            @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
+     
            </style>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +59,7 @@
             
         </nav>
         <h1> You can choose to upload a chat history with that person to better train our AI.</h1>
-        <img id="entry" src="../static/chathistory.png" alt="uploadachat">
+        <img id="entry" src="../static/chathistory.png">
         <p>Add chat history here. (txt file, currently support whatsapp chat-history file)</p>
         <button><a href="{{url_for('upload_file')}}">Upload</a> </button> <br>
     

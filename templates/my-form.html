@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EDGPQ3F3Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0EDGPQ3F3Y');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +69,7 @@
             #cnn{height: 40px;width: 40px;padding-top: 0px;}
     body {
     font-family: Arial, Helvetica, sans-serif;
-    }
+  }
     .nav{position: relative;width: 80px;display: flex;;align-items: center;justify-content: center;height: 40px;font-family: "Cormorant Garamond",cursive;font-weight:700;color:rgb(53, 52, 52) ;text-align: center;font-size: 14pt;margin: 0;padding: 0;border-radius: 5%;}
     nav{justify-content: left;display:flex;height:40px;background-color: #ffdcc3;border-radius: 3%;text-align: center;align-items: center;opacity: 80%;margin:0;padding: 0;top:0;position:absolute;right: 0;left: 0;position: fixed;z-index: 100;box-shadow: #ffdcc3;}
     .right{position: relative;}
@@ -71,6 +80,11 @@
     #tryit .dropdown:hover{display: block;}
     .dropdown{display: none;position: absolute;z-index: 1001;width: 100px;}
     .dropdown:a{float:none;display: block;text-align: left;color: black;}
+    #userverify{position: relative;display: flex;}
+    @media only screen and (max-width: 400px) {
+  div{width: 100vw;}
+  body{width: 100vw;}
+}
     </style>
 </head>
 <body>
@@ -86,7 +100,7 @@
     </nav>
     <div id="firstdiv"></div>
     <div id="seconddiv">
-    <img src="/static/steyy.png" id="steyy" alt="steyylogo">
+    <img src="/static/steyy.png" id="steyy">
     <h1>Welcome to Steyy</h1>
     <p id="firstp">Steyy is a place where you can bring your loved ones back. </p>
     <button id="Tryit"><a href="#q1">Try Now</a></button>
@@ -95,33 +109,32 @@
         <div class="container">
 
             <div id="q1">
-            <img class="gif" src="/static/name.gif" alt="woman">
-            <img src="/static/ribbon.gif" id="welcome" alt="ribbon">
+            <img class="gif" src="/static/name.gif">
+            <img src="/static/ribbon.gif" id="welcome">
             <h1>Welcome!</h1>
             <label for="username">How do you prefer us to call you?</label>
             <hr>
             <input id="username" type="text" name="username"placeholder="John">
             <hr>
-            <button type="button"><a href="#q2">Next</a> </button>
+            <button type="button"><a href="#q1" id="b1">Next</a> </button>
             </div>
 
             <div id="q2">
-            <img class="gif" src="/static/man.gif" alt="man">
+            <img class="gif" src="/static/man.gif">
             <label for="chatbotname">Who do you wish to recreate?(name only)</label>
             <hr>
             <input id="chatbotname" type="text" name="chatbotname" placeholder="ex:Annabelle" >
             <hr>
-            <button  type="button"><a href="#q3">Next</a> </button>
+            <button  type="button"><a href="#q2" id="b2">Next</a> </button>
             </div>
 
             <div id="q3">
-            <img class="gif" src="/static/maninphone.gif" alt="manvideocall">
+            <img class="gif" src="/static/maninphone.gif">
             <label for="gender">What's his/her gender?</label>
             <hr>
             <select id="gender" name="gender">
               <option value="Female">Female</option>
               <option value="Male">Male</option>
-              <option value="Trans">Trans</option>
               <option value="Others">Others</option>
             </select>
             <hr>
@@ -129,7 +142,7 @@
             </div>
 
             <div id="q4">
-                <img class="gif" src="/static/grandma.gif" alt="grandma">
+                <img class="gif" src="/static/grandma.gif">
             <label for="relationship">What's the relationship between you and the person being created? (One word)</label>
             <hr>
             <input id="relationship" type="text" name="relationship" placeholder="ex: Grandmother">
@@ -138,7 +151,7 @@
             </div>
 
             <div id="q5">
-                <img class="gif" src="/static/grandmatyping.gif" alt="grandmatyping">
+                <img class="gif" src="/static/grandmatyping.gif">
             <label for="age">How old is he/she?</label>
             <hr>
             <input id="age" type="number" name="age">
@@ -147,7 +160,7 @@
             </div>
 
             <div id="q6">
-            <img class="gif" src="/static/call.gif" alt="calling">
+            <img class="gif" src="/static/call.gif">
             <label for="nickname">How does that person call you?</label>
             <hr>
             <input id="nickname" type="text" name="relationship" placeholder="ex: Grandmother">
@@ -170,11 +183,32 @@
            
             <h1>You are all set. Let's go!</h1>
             <hr>
-            <input id="submit" type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit" >
             </div>
         </div>
     </form>
     <script>
+        let b1=document.querySelector("#b1")
+        let b2=document.querySelector("#b2")
+        function verifyusername(){
+            let username=document.getElementById("username").value
+            console.log(username)
+            if (username.length>=3){b1.href="#q2"}
+            else{window.alert("Username must be longer than 2 character!")}
+        }
+        b1.onclick=verifyusername
+        
+        function verifybotname(){
+            let botname=document.getElementById("chatbotname").value
+            if (botname.length>=3){b2.href="#q3"}
+            else{window.alert("Replica's name must be longer than 2 character!")}
+        }
+        b2.onclick=verifybotname
+        
+
+
+
+        submit.addEventListener("click",function(){verify()})
         let imgEL='<img src="/static/Tryit.gif" id="butterfly">';
         let div1=document.querySelector("#firstdiv");
         function showpic(){

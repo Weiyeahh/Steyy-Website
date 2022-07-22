@@ -6,7 +6,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Bellota:wght@300&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/static/style.css">
-       <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
         <style>
             body{position: relative;top:50px}
             a:hover{text-decoration:none;}
@@ -28,6 +27,10 @@
             #submit{font-family: "Cormant Garamond",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color: rgb(248, 251, 239);border: none;border-radius: 8px;padding: 16px;}
             #choose{font-family: "Cormant Garamond",cursive;color:rgb(84, 64, 64) ;text-align: center;background-color: rgb(248, 251, 239);border: none;border-radius: 8px;padding: 16px;}
            hr{border: none;}
+           @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
+     
          
            @keyframes example {
             0%   {opacity:0%;}
@@ -58,7 +61,7 @@
         
     </nav>
 <h1>Upload the pircture of someone you wish to create: (jpg)</h1>
-<img src="../static/womaninphone.gif" alt="womaninphone" width="200px">
+<img src="../static/womaninphone.gif" width="200px">
 <br>
 <hr>
 <form method=post enctype=multipart/form-data>

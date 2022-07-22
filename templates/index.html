@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EDGPQ3F3Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0EDGPQ3F3Y');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -40,6 +49,10 @@
     #tryit .dropdown:hover{display: block;}
     .dropdown{display: none;position: absolute;z-index: 1001;width: 100px;}
     .dropdown:a{float:none;display: block;text-align: left;color: black;}
+    @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
+     
     </style>
     <title>Chatroom</title>
 </head>

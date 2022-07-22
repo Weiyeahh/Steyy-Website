@@ -38,6 +38,10 @@
             p{animation-name: example;
                 ;
             animation-duration: 0.8s;}
+            @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
+     
            </style>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +61,7 @@
 <h1>Submit the chathistory here:</h1>
 <p>(txt file, only whatsapp exported chat-history supported)
 </p>   
-<img src="../static/upload.gif" width="200px" alt="uploadfile">
+<img src="../static/upload.gif" width="200px">
 <br>
 <hr>
 <form method=post enctype=multipart/form-data>

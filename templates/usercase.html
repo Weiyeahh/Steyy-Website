@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="/static/style.css">
     <style>
         
-        div{height: auto;}
-        body{position: relative;}
-        img{position: relative;width: 500px;}
+        div{width: 50vw;height: auto;}
+        img{position: relative;width: 500px;width: 80vw;}
         #grandma{width: 80px;}
-        p{font-size: 15pt;}
-        body{position: relative;top:50px}
+        p{font-size: 3vw;}
+        nav{width: 100vw;}
+        body{position: relative;top:50px;display: flex;}
+        @media only screen and (max-width: 400px) {
+ #login{display: none;}
+}
         
     </style>
 </head>
@@ -27,7 +30,7 @@
         <a class="nav right" href="/usercase">Usecase</a>
         <a class="nav right" href="/sitemap">Sitemap</a>
     
-        <a class="nav login">Login</a>
+        <a class="nav login" id="login">Login</a>
         
     </nav>
     <div>
@@ -37,5 +40,6 @@
     <br>
     <img src="/static/image.png">
     </div>
+   
 </body>
 </html>
